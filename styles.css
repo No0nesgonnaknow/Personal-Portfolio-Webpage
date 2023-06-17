@@ -1,0 +1,121 @@
+/* styles.css */
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a dark background color and font family */
+  body {
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Apply flexbox layout to the header */
+  header {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Style the navigation menu */
+  #navbar ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  #navbar ul li {
+    margin-right: 20px;
+  }
+  
+  #navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  #navbar ul li a:hover {
+    color: #ffcc00; /* Change to desired hover color */
+  }
+  
+  /* Style the welcome section */
+  #welcome-section {
+    background-color: #111;
+    padding: 100px;
+    text-align: center;
+  }
+  
+  /* Style the project section */
+  #projects {
+    background-color: #222;
+    padding: 50px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .project-tile {
+    background-color: #333;
+    padding: 20px;
+  }
+  
+  .project-tile h3 {
+    margin-bottom: 10px;
+  }
+  
+  .project-tile p {
+    margin-bottom: 20px;
+  }
+  
+  .project-tile a {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .project-tile a:hover {
+    background-color: #ffcc00; /* Change to desired hover background color */
+    color: #222; /* Change to desired hover text color */
+  }
+  
+  /* Style the skills section */
+  #skills {
+    background-color: #111;
+    padding: 50px;
+  }
+  
+  #skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+  }
+  
+  #skills ul li {
+    width: 50%;
+    padding: 10px;
+  }
+  
+  /* Style the contact section */
+  #contact {
+    background-color: #222;
+    padding: 50px;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
