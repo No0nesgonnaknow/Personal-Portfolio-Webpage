@@ -106,10 +106,28 @@
   }
   
   /* Style the contact section */
-  #contact {
-    background-color: #222;
-    padding: 50px;
-  }
+#contact {
+  background-color: #222;
+  padding: 50px;
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+}
+
+#contact p {
+  margin-bottom: 10px;
+}
+
+#contact a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #ffcc00; /* Change to desired hover color */
+}
   
   /* Style the footer */
   footer {
