@@ -1,7 +1,7 @@
 /* styles.css */
 
 /* Reset default margin and padding */
-body, h1, h2, h3, p {
+body, h1, h2, h3, p, ul, ol, li {
   margin: 0;
   padding: 0;
 }
@@ -9,6 +9,7 @@ body, h1, h2, h3, p {
 /* Set a base font size */
 body {
   font-size: 16px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
 /* Responsive styles */
@@ -26,11 +27,14 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  background-color: #801e1e;
+  color: #fff;
 }
 
 header {
   text-align: center;
   padding: 20px;
+  font-size: 25px;
 }
 
 main {
@@ -40,48 +44,71 @@ main {
   margin: 20px auto;
 }
 
-h2 {
-  text-align: center;
+h1, h2, h3 {
   margin-bottom: 20px;
 }
 
 #recipes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
 }
 
 .recipe-tile {
-  flex-basis: calc(33.33% - 20px);
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s, opacity 0.2s;
+  opacity: 0.88;
+}
+
+.recipe-tile:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 .recipe-tile h3 {
   margin-bottom: 10px;
+  color: #3a3a3a;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .recipe-tile img {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
+  border-radius: 4px;
 }
 
 .recipe-tile p {
   margin-bottom: 10px;
+  color: #555;
 }
 
 .recipe-tile a {
-  display: block;
+  display: inline-block;
   text-align: center;
   text-decoration: none;
-  background-color: #333;
+  background-color: #3a3a3a;
   color: #fff;
-  padding: 10px;
-  border-radius: 4px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.2s ease;
 }
 
 .recipe-tile a:hover {
-  background-color: #555;
+  background-color: #575757;
+}
+
+.recipe-tile a:active {
+  background-color: #292929;
+}
+
+ul, ol {
+  padding: 20px;
+  max-width: 40rem;
+  margin: 10px;
 }
